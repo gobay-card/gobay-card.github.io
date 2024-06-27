@@ -20,12 +20,21 @@
       <p>Buy and sell gift cards.</p>
     </div>
 
-    <a
-      href="https://gobay-card.github.io/privacy-policy"
-      target="_blank"
-      class="privacy-policy-link"
-      >Privacy Policy</a
-    >
+    <div class="page-link-container">
+      <a
+        href="https://gobay-card.github.io/privacy-policy"
+        target="_blank"
+        class="page-link"
+        >Privacy Policy</a
+      >
+
+      <a
+        href="https://gobay-card.github.io/contact-us"
+        target="_blank"
+        class="page-link"
+        >Contact Us</a
+      >
+    </div>
   </body>
 </html>
 
@@ -69,12 +78,17 @@
     font-weight: bolder;
   }
 
-  .privacy-policy-link {
-    color: lightgray;
+  .page-link-container {
     position: absolute;
     bottom: 3rem;
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .page-link {
+    color: lightgray;
   }
 
   /* Small devices such as large phones (640px and up) */
